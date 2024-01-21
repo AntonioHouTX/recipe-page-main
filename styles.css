@@ -5,6 +5,8 @@
 }
 
 :root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark_raspberry: hsl(332, 51%, 32%);
     --white: hsl(0, 0%, 100%);
     --rose:  hsl(330, 100%, 98%);
     --eggshell: hsl(30, 54%, 90%);
@@ -26,22 +28,36 @@
 
 body {
     background-color: var(--eggshell);
-    color: var(--dark_charcoal);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    margin: 1rem 0;
 }
 
 main {
     background-color: var(--white);
+    color: var(--dark_charcoal);
     font-family: outfit;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+img {
+    border-radius: 10px;
 }
 
 h1, h3 {
     font-family: young-serif;
+}
+
+h3 {
+    color: var(--nutmeg);
+}
+
+p {
+    color: var(--wenge_brown)
 }
 
 ul, ol {
